@@ -421,10 +421,6 @@ body {
         
     }
 
-    .ul-link {
-        display: flex;
-    }
-
     .main {
         display: flex;
         align-items: center;
@@ -451,9 +447,11 @@ body {
         margin: auto;
     }
 
-    .about-paragrap{
-        width: 500px;
+    .about-paragrap{        
+        padding: 55px;
+        width: 400px;
     }
+
 
     .cards{
         display: grid;
