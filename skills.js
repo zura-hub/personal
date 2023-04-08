@@ -1,13 +1,13 @@
-function skills(){
+function skills() {
     const skillHtml = document.querySelector('.animation-text-skills')
     const skillText = '_skills'
     let i = 0;
 
-    function scripting(){
-        if(i < skillText.length){
+    function scripting() {
+        if (i < skillText.length) {
             skillHtml.innerHTML += skillText.charAt(i)
             i++
-            setTimeout(scripting , 200)
+            setTimeout(scripting, 200)
         }
     }
     scripting();
@@ -15,13 +15,13 @@ function skills(){
 
 skills();
 
-function htmlBox(){
+function htmlBox() {
     const htmlBox = document.querySelector('.html-box')
     const htmlText = '_HTML'
     let i = 0;
 
-    function htmlScripting(){
-        if(i < htmlText.length){
+    function htmlScripting() {
+        if (i < htmlText.length) {
             htmlBox.innerHTML += htmlText.charAt(i)
             i++
             htmlBox.style.backgroundColor = '#807fd091'
@@ -32,13 +32,13 @@ function htmlBox(){
 }
 htmlBox()
 
-function cssBox(){
+function cssBox() {
     const cssBox = document.querySelector('.css-box')
     const cssText = '_CSS'
     let i = 0;
 
-    function cssScripting(){
-        if(i < cssText.length){
+    function cssScripting() {
+        if (i < cssText.length) {
             cssBox.innerHTML += cssText.charAt(i)
             i++
             cssBox.style.backgroundColor = '#e6db7487'
@@ -51,13 +51,13 @@ function cssBox(){
 cssBox()
 
 
-function jsBox(){
+function jsBox() {
     const jsBox = document.querySelector('.js-box')
     const jsText = '_JavaScript'
     let i = 0;
 
-    function jsScripting(){
-        if(i < jsText.length){
+    function jsScripting() {
+        if (i < jsText.length) {
             jsBox.innerHTML += jsText.charAt(i)
             i++
             jsBox.style.backgroundColor = '#2fccefa8'
@@ -69,13 +69,13 @@ function jsBox(){
 jsBox()
 
 
-function reactBox(){
+function reactBox() {
     const reactBox = document.querySelector('.react-box')
     const reactText = '_React'
     let i = 0;
 
-    function reactScripting(){
-        if(i < reactText.length){
+    function reactScripting() {
+        if (i < reactText.length) {
             reactBox.innerHTML += reactText.charAt(i)
             i++
             reactBox.style.backgroundColor = '#807fd0aa'
@@ -85,3 +85,21 @@ function reactBox(){
     reactScripting()
 }
 reactBox()
+
+function pythonBox() {
+    const pythonBox = document.querySelector('.python-box')
+    const pythonText = '_Python'
+    let i = 0;
+
+    function pyScrtipting() {
+        if (i < pythonText.length) {
+            pythonBox.innerHTML += pythonText.charAt(i)
+            i++
+            pythonBox.style.backgroundColor = '#e6db7437'
+            setTimeout(pyScrtipting, 200)
+        }
+    }
+    pyScrtipting()
+}
+
+pythonBox()

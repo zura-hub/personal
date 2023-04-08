@@ -143,8 +143,7 @@
                         <div class="card-inner">
                             <h1 class="name"> { Base }</h1>
                             <img src="./img/base.jpg" alt="" class="card-img">
-                            <a href="https://zura-hub.github.io/base-apparel/" target="_blank"
-                                class="card-link"> {
+                            <a href="https://zura-hub.github.io/base-apparel/" target="_blank" class="card-link"> {
                                 Click
                                 To Open Page }</a>
                         </div>
@@ -159,12 +158,15 @@
                 <h2 class="service-text">
                     < service >
                 </h2>
-                <input class="s-input" type="text" name="" id="servise-input-one" value="{_Front end Developer}"
-                    readonly>
-                <input class="s-input" type="text" name="" id="servise-input" value="{ _HTML }" readonly>
-                <input class="s-input" type="text" name="" id="servise-input-green" value="{ _CSS }" readonly>
-                <input class="s-input" type="text" name="" id="servise-input-green" value="{ _JS }" readonly>
-                <input class="s-input" type="text" name="" id="servise-input-react" value="{ _REACT }" readonly>
+                <div class="programs">
+                    <input class="s-input" type="text" name="" id="servise-input-one" value="{_Front end Developer}"
+                        readonly>
+                    <input class="s-input" type="text" name="" id="servise-input" value="{ _HTML }" readonly>
+                    <input class="s-input" type="text" name="" id="servise-input-green" value="{ _CSS }" readonly>
+                    <input class="s-input" type="text" name="" id="servise-input-green" value="{ _JS }" readonly>
+                    <input class="s-input" type="text" name="" id="servise-input-react" value="{ _REACT }" readonly>
+                    <input class="s-input" type="text" name="" id="servise-input-react" value="{ PYTHON }" readonly>
+                </div>
             </div>
         </div>
 
@@ -174,11 +176,11 @@
                 <h2 class="contant-me">
                     < contanc_me>
                 </h2>
-                <form action="">
-                    <input type="text" name="" class="inp" placeholder="_name*">
-                    <input type="email" name="" class="inp" placeholder="_email**">
-                    <input id="text-area" type="textarea" name="" class="inp" placeholder="_message*">
-                    <button class="send">{ send }</button>
+                <form class="cont-info" action="">
+                    <input id="nameInput" type="text" name="" class="inp" placeholder="_name*">
+                    <input id="emailIpnut" type="email" name="" class="inp" placeholder="_email**">
+                    <input id="textArea" type="textarea" name="" class="inp" placeholder="_message*">
+                    <button onclick="data()" class="send">{ send }</button>
                 </form>
             </div>
         </div>
@@ -187,6 +189,7 @@
     </div>
     <script src="js.js"></script>
     <script src="main.js"></script>
+    <script src="data.js"></script>
 </body>
 
 </html>
