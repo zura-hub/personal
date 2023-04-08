@@ -1,5 +1,5 @@
 function ebout(){
-  const txt = '_about me' 
+  const txt = '_about me..' 
   let targ = document.querySelector('.animation-text-ebout')
   let i = 0;
 

@@ -13,9 +13,10 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav class="nav-bar">
+
+    <div class="main">
+        <div class="main-inner">
+            <div class="nav-bar">
                 <h1 class="header-logo">
                     // Zviad <br>
                     <span>web_dev</span>
@@ -24,9 +25,11 @@
                 <div class="menu-btn">
                     <h1 onclick="showMenu()" class="btn">≣</h1>
                 </div>
-            </nav>
+            </div>
+        </div>
 
-            <nav class="nav-bar-inner">
+        <div class="main-second-inner">
+            <div class="nav-bar-inner">
                 <ul class="ul-link">
                     <a class="active" href="index.html">
                         <li>_home</li>
@@ -47,21 +50,22 @@
                         <li>_contact</li>
                     </a>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </div>
+    </div>
 
-        <!-- after header content -->
-
+    <!-- after header content -->
+    <div class="container">
         <div class="after-header">
             <h1 class="after-header-text">
                 // HI, I'M ZVIAD, A...
             </h1>
 
-            <h1 class="animarion">
+            <div class="animarion">
                 <h1 class="span-animation">{"</h1>
                 <span class="animation-text"></span>
-                <h1 class="span-animation">"}</h1>
-            </h1>
+                <h1 class="span-animation-one">"}</h1>
+            </div>
         </div>
 
 
@@ -101,9 +105,9 @@
             <h2 class="about-text">
                 < portfolio>
             </h2>
-            <div class="about-inner">
+            <div class="about-innerr">
                 <div class="usa">
-                    <p class="about-paragrap">
+                    <p class="about-paragrap-job">
                         Here is my jobs , procjects created by me
                     </p>
 
@@ -115,26 +119,36 @@
                                 class="card-link"> { Click To
                                 Open Page }</a>
                         </div>
+
+
+
+                        <div class="card-inner">
+                            <h1 class="name"> { Password Generator }</h1>
+                            <img src="./img/four-card.jpg" alt="" class="card-img">
+                            <a href="https://zura-hub.github.io/password-generator/" target="_blank" class="card-link">
+                                {
+                                Click
+                                To Open Page }</a>
+                        </div>
+
+                        <div class="card-inner">
+                            <h1 class="name"> { Movie }</h1>
+                            <img src="./img/movie.jpg" alt="" class="card-img">
+                            <a href="https://zura-hub.github.io/entertaiment-web-applikation/" target="_blank"
+                                class="card-link"> {
+                                Click
+                                To Open Page }</a>
+                        </div>
+
+                        <div class="card-inner">
+                            <h1 class="name"> { Base }</h1>
+                            <img src="./img/base.jpg" alt="" class="card-img">
+                            <a href="https://zura-hub.github.io/base-apparel/" target="_blank"
+                                class="card-link"> {
+                                Click
+                                To Open Page }</a>
+                        </div>
                     </div>
-
-
-                    <div class="card-inner">
-                        <h1 class="name"> { Password Generator }</h1>
-                        <img src="./img/four-card.jpg" alt="" class="card-img">
-                        <a href="https://zura-hub.github.io/password-generator/" target="_blank" class="card-link"> {
-                            Click
-                            To Open Page }</a>
-                    </div>
-
-                    <div class="card-inner">
-                        <h1 class="name"> { Movie }</h1>
-                        <img src="./img/movie.jpg" alt="" class="card-img">
-                        <a href="https://zura-hub.github.io/entertaiment-web-applikation/" target="_blank"
-                            class="card-link"> {
-                            Click
-                            To Open Page }</a>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -143,7 +157,7 @@
             <div class="service">
                 <h1 class="servise-header"> { # }</h1>
                 <h2 class="service-text">
-                    < service>
+                    < service >
                 </h2>
                 <input class="s-input" type="text" name="" id="servise-input-one" value="{_Front end Developer}"
                     readonly>
@@ -157,11 +171,13 @@
         <div class="container">
             <div class="contact">
                 <h1 class="contanct-header">{✳}</h1>
-                <h2 class="contant-me">< contanc_me ></h2>
+                <h2 class="contant-me">
+                    < contanc_me>
+                </h2>
                 <form action="">
                     <input type="text" name="" class="inp" placeholder="_name*">
                     <input type="email" name="" class="inp" placeholder="_email**">
-                    <input id="text-area"type="textarea" name="" class="inp" placeholder="_message*">
+                    <input id="text-area" type="textarea" name="" class="inp" placeholder="_message*">
                     <button class="send">{ send }</button>
                 </form>
             </div>
