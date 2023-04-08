@@ -432,8 +432,8 @@ body {
 
     .ul-link{
         display: flex;
-        margin-top: -85px;
-        margin-left: 50%;
+        margin-top: -45px;
+        margin-left: 38%;
     }
 
     .animation-text{
@@ -458,6 +458,7 @@ body {
     .cards{
         display: grid;
         grid-template-columns: auto auto;
+        justify-content: center;
     }
 
     .card-img{
@@ -470,4 +471,47 @@ body {
         font-size: 25px;
         letter-spacing: 3px;
     }
+
+    .about-paragrap{
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .card-portfolio{
+        margin-left: -60px;
+    }
+
+    .portfolio main{
+        margin-left: 15%;
+    }
+    .animation-text-portfolio{
+        margin-left: 15%;
+        font-size: 45px;
+        letter-spacing: 15px;
+    }
+
+    .animation-text-servvices{
+        letter-spacing: 15px;
+        font-size: 35px;
+        margin-right: -14%;
+    }
+    .service-box{
+        margin-left: 30px;
+    }
+    .service-text{
+        margin-top: 60px;
+        margin-left: -120px;
+    }
+
+    .skills-inner{
+        margin-left: -60px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .skill-box{
+        font-size: 35px;
+        letter-spacing: 15px;
+    }
+
 }
