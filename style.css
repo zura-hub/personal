@@ -39,6 +39,11 @@ body {
     user-select: none;
 }
 
+.python-box {
+    margin-left: 0;
+    margin-top: 30px;
+}
+
 .btn {
     font-size: 30px;
     cursor: pointer;
@@ -204,6 +209,17 @@ body {
     text-align: center;
 }
 
+
+.animation-text {
+    margin: 30px;
+}
+
+.git-animaton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .inp {
     width: 100%;
     border: none;
@@ -274,6 +290,7 @@ body {
 .animation-text-portfolio {
     color: #807fd0;
     font-size: 33px;
+    margin: 0 20px 0 20px;
 }
 
 .header-portfolio {
@@ -284,6 +301,21 @@ body {
 .animation-text-servvices {
     color: #2fcbef;
     font-size: 30px;
+    padding-left: 0px;
+}
+
+
+
+.animarion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-box{
+    display: grid;
+    justify-content: center;
+    margin-left: -15px;
 }
 
 .service-text {
@@ -331,6 +363,13 @@ body {
     border: solid 1px #2fccefa8;
 }
 
+
+.skills-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .react-box {
     margin-top: 30px;
     padding-top: 5px;
@@ -353,7 +392,7 @@ body {
     text-align: center;
     color: #e6db74;
     border: solid 1px #807fd0aa;
-    margin-left: 50%;
+
 }
 
 /* tablet */
@@ -368,20 +407,53 @@ body {
         font-size: 25px;
     }
 
-    .animarion {
-        margin-left: 10%;
+    .services{
+        display: flex;
+        align-items: center;
+        margin-left: -80px;
+    }
 
+    .animation-text-servvices{
+        margin: 0 80px 0 80px;
+    }
+
+    .span-animation {
+        margin-right: 100px;
+    }
+
+    .span-animation-one {
+        margin: -30px;
     }
 
     .animation-text {
         font-size: 35px;
+        margin: 40px;
     }
 
+    .animation-text-portfolio {
+        color: #807fd0;
+        font-size: 33px;
+        margin: 0 50px 0 50px;
+    }
+
+    .python-box {
+        margin: 0;
+        margin-top: 40px;
+    }
 
     .about-paragrap-job {
         text-align: center;
         width: 100%;
         font-size: 35px;
+    }
+
+
+    .span-animation {
+        margin-left: -40px;
+    }
+
+    .span-animation {
+        margin-right: -40px;
     }
 
     .send {
@@ -392,9 +464,15 @@ body {
 
     .animation-text-ebout {
         font-size: 45px;
-        margin-left: 25px;
         letter-spacing: 3px;
-        padding-right: -20px;
+        margin: 0 80px 0 80px;
+    }
+
+    .about-animation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
     }
 
     .about-paragrap {
@@ -404,23 +482,42 @@ body {
         margin-bottom: 40px;
     }
 
+    .home-animation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+    }
+
+    .skills-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .animarion:nth-child(1) {
         margin-left: 17%;
     }
 
     .animation-text-servvices {
         font-size: 45px;
-        margin-left: 15px;
+    }
+
+    .animarion {
+        margin-left: -200px;
     }
 
     .animation-text-skills {
-        margin-left: 85px;
         font-size: 55px;
+        margin: 0 80px 0 80px;
     }
 
-    .span-animation {
-        margin-left: 15%;
+    .git-animaton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -428,20 +525,40 @@ body {
         display: none;
     }
 
+    .container{
+        padding: 20px;
+    }
     .nav-bar-inner {
         display: flex;
+    }    
 
+    .skills-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
+    
     .main {
         display: flex;
         align-items: center;
     }
 
-    .ul-link {
+    .main-inner{
         display: flex;
-        margin-top: -45px;
-        margin-left: 33%;
+    }
+
+    .about-animation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+    }
+    
+    .ul-link{
+        display: flex;
+        margin-top: -30px;
+        margin-left: 20%;
     }
 
     .animation-text {
@@ -449,14 +566,16 @@ body {
     }
 
     .animarion {
-        display: block;
-        margin: auto;
-        margin-left: 16%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .about-inner {
-        width: 1200px;
-        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
     }
 
     .about-paragrap {
@@ -464,17 +583,21 @@ body {
         width: 400px;
     }
 
-
-    .cards {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
+    .span-animation-one {
+        margin: 0px;
     }
 
+    .cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+
     .card-img {
-        width: 670px;
+        width: 100%;
         height: 550px;
-        padding: 15px;
     }
 
     .s-input {
@@ -487,26 +610,29 @@ body {
         font-size: 25px;
     }
 
-    .card-portfolio {
-        margin-left: -60px;
-    }
-
+   
     .portfolio main {
         margin-left: 15%;
     }
 
     .animation-text-portfolio {
-        margin-left: 15%;
-        font-size: 45px;
-        letter-spacing: 15px;
+        color: #807fd0;
+        font-size: 33px;
+        margin: 0 80px 0 80px;
     }
 
     .animation-text-servvices {
         letter-spacing: 15px;
         font-size: 35px;
-        margin-right: -14%;
+        margin: 0 80px 0 80px;
     }
 
+
+    .git-animaton{
+        display: flex;
+        justify-content: center;
+    }
+    
     .service-box {
         margin-left: 30px;
     }
@@ -517,9 +643,9 @@ body {
     }
 
     .skills-inner {
-        margin-left: -60px;
-        margin-top: 60px;
-        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        margin-left: -100px;
     }
 
     .skill-box {
@@ -542,30 +668,41 @@ body {
         grid-template-columns: auto auto;
     }
 
-    .skill-box{
+    .skill-box {
         display: grid;
         justify-content: center;
         gap: 15px;
         grid-template-columns: auto auto;
     }
 
-    .skill-box > *{
+    .skill-box>* {
         width: 400px;
     }
 
-    .service-text{
+    .service-text {
         font-size: 45px;
         margin-left: 5px;
     }
 
-    .inp{
+    .inp {
         margin-top: 40px;
     }
 
-    .cont-info{
+    .cont-info {
         width: 600px;
         display: block;
         margin: auto;
         margin-top: 100px;
+    }
+
+    .python-box {
+        margin-left: 50%;
+    }
+
+    .home-animation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
     }
 }
