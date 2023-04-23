@@ -283,6 +283,22 @@ body {
     text-align: center;
 }
 
+.error-massage{
+    color: rgba(255, 111, 0, 0.9);
+    font-size: 10px;
+}
+
+.email-error-massage{
+    color: rgba(255, 111, 0, 0.9);
+    font-size: 10px;
+}
+
+.text-error-massage{
+    color: rgba(255, 111, 0, 0.9);
+    font-size: 10px;
+    display: none;
+}
+
 .names {
     color: #e6db74;
 }

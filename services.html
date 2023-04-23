@@ -87,10 +87,19 @@
                 < contact_me>
             </h2>
             <form class="cont-info" action="">
-                <input type="text" name="" class="inp" placeholder="_name*">
-                <input type="email" name="" class="inp" placeholder="_email**">
+                <input id="nameInput" type="text" name="" class="inp" placeholder="_name*">
+                <div class="error-massage-box">
+                    <p class="error-massage"></p>
+                </div>
+                <input id="emailInput" type="email" name="" class="inp" placeholder="_email**">
+                <div class="error-massage-box">
+                    <p class="email-error-massage"></p>
+                </div>
                 <input id="text-area" type="textarea" name="" class="inp" placeholder="_message*">
-                <button onclick="data()" class="send">{ send }</button>
+                <div class="error-massage-box">
+                    <p class="text-error-massage"></p>
+                </div>
+                <button onclick="errorField()" class="send">{ send }</button>
             </form>
         </div>
     </div>
