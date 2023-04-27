@@ -1,11 +1,14 @@
 const nameError = document.querySelector('.error-massage')
 const mailError = document.querySelector('.email-error-massage')
 const textError = document.querySelector('.text-error-massage')
+const send = document.querySelector('.send')
+const sumbit = document.querySelector('.cont-info')
 
 // inputs
 const nameInput = document.querySelector('#nameInput')
 const meilInput = document.querySelector('#emailInput')
 const textInput = document.querySelector('#text-area')
+
 
 // validation functions
 
@@ -61,8 +64,48 @@ const chackedText = textInput.addEventListener('input', function () {
 })
 
 
-function errorField() {
 
-    alert('Fill in contact details')
 
-}
+
+sumbit.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+
+    const userName = nameInput.value;
+    const userEmail = meilInput.value;
+    const userText = textInput.value;
+
+    const obgData = {
+        name: userName,
+        email: userEmail,
+        Txt: userText
+    };
+
+    console.log(obgData);
+
+    localStorage.setItem('obgData', JSON.stringify(obgData));
+});
+
+
+
+send.addEventListener('click', () => {
+    // Check if any of the input fields are empty or contain only whitespace
+    if (nameInput.value.trim() === '' || meilInput.value.trim() === '' || textInput.value.trim() === '') {
+        // Show an alert if any of the input fields are empty or contain only whitespace
+        alert('Please fill in all the details.');
+        return false
+    }
+    else {
+        alert('Information sent successfully')
+        nameError.textContent = '';
+        mailError.textContent = '';
+        textError.textContent = '';
+    }
+
+});
+
+
+
+
+
+
